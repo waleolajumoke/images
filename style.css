@@ -10,7 +10,6 @@
     --max-width: 1200px;
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -54,7 +53,7 @@ img{
 .nav-links a{
     font-weight: 500;
     color: var(--text-dark);
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 ul{
     list-style: none;
@@ -64,16 +63,124 @@ a{
 }
 
 .btn{
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     outline: none; 
     border: none;
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     cursor: pointer;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .btn:hover{
     background-color: var(--primary-color-dark);
+}
+
+.header-container{
+    display: flex;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.header-image{
+    position: relative;
+    width: 100%;
+}
+
+.header-image img{
+    position: absolute;
+    width: 750px;
+    top: -40px;
+}
+.header-content {
+    padding: 2rem ;
+    
+}
+.header-content h2{
+    padding: 0.5rem 1.5rem;
+    color: var(--primary-color);
+    border-radius: 5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .05);
+    width: fit-content;
+    background-color: #fff;
+    font-size: 1rem; 
+    margin-inline-start: unset;
+    margin-bottom: 1rem;
+}
+
+.header-content h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    text-align: left;
+    margin-bottom: 2rem;
+    max-width:90%;
+    
+}
+
+.section-description{
+    color: var(--text-light);
+    margin: auto;
+    line-height: 1.5rem;
+  
+}
+
+.header-image::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: var(--extra-light);
+    top: 0;
+    left: 5rem;
+    border-top-left-radius: 2rem;
+    z-index: -1;
+}
+
+.header-form form{
+    display: flex;
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    transform: translateY(-50%);
+}
+header {
+  background: linear-gradient(to bottom, rgba(138, 121, 240, 0), rgba(138, 121, 240, 0.1));
+}
+
+.header-form .input_group{
+    display: grid;
+    gap: 10px;
+    flex: 1 0 170px;
+}
+
+.header-form label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.header-form input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--text-light);
+
+}
+
+.header-form input::placeholder{
+    color: var(--text-light);
+}
+
+.header-form .btn{
+    padding: 15px 17px;
 }
